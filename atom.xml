@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://gouzi61.github.io</id>
+    <title>菜狗子的博客</title>
+    <updated>2023-07-05T07:52:47.825Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://gouzi61.github.io"/>
+    <link rel="self" href="https://gouzi61.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://gouzi61.github.io/images/avatar.png</logo>
+    <icon>https://gouzi61.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, 菜狗子的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[人生感悟-晶姐语录]]></title>
+        <id>https://gouzi61.github.io/post/ren-sheng-gan-wu-jing-jie-yu-lu/</id>
+        <link href="https://gouzi61.github.io/post/ren-sheng-gan-wu-jing-jie-yu-lu/">
+        </link>
+        <updated>2023-07-05T07:32:17.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="技术">技术</h1>
+<blockquote>
+<p>大模型的催生了一大批自动化写代码的工具，在未来计算机就业将会向两方面倾斜</p>
+<ul>
+<li>测试岗位：对代码生成工具生成的代码进行测试并修改</li>
+<li>产品、需求分析师，这一部分是大模型不能替代的</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>清晰的写出问题，问题就已经解决了一半。</p>
+</blockquote>
+<blockquote>
+<p>看论文时要记录的是：什么值得借鉴。一周一重温自己的思维导图，并思考这个借鉴的点是否合理，看有没有变化</p>
+</blockquote>
+<blockquote>
+<p>什么时候写小论文初稿：<br>
+当实验差不多达到预期，还差一些小的缝缝补补时，就可以写初稿了。写初稿的目的在于梳理自己做过的工作，找出哪里还有空白，那么后续的工作就相当于做填空题了。<br>
+初稿和终稿会相差90%左右，不用过多焦虑。</p>
+</blockquote>
+<blockquote>
+<p>人机协同的关键在于：人和机器能够互相读懂。大模型的诞生使得机器能够读懂人的语言，而人如何理解机器的决策是人机协同一个非常重要的点。</p>
+</blockquote>
+<blockquote>
+<p>我们的创新出在哪里：一个方法应用到一个领域一定会有改进，主要讲自己的改进，就是创新。</p>
+</blockquote>
+<h1 id="人和事">人和事</h1>
+<blockquote>
+<p>当我们面临一个选择点时，如何选择？</p>
+<ul>
+<li>首先要明确的是，最后大家的人生都会到达一个大差不差的点，但到达这个点有两种方式</li>
+</ul>
+<ol>
+<li>选择较难的那条路，我们会一步一步向上努力，最终到达那个点</li>
+<li>选择较轻松的路，最后开始会很简单，但到后面也会遇到一个艰难的上陡坡，付出成倍的努力到达那个点</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>成功的背后都是大势所趋，我们也是时代的产物，现在的红利是解决实际问题，国家对论文的奖励已经越来越少。</p>
+</blockquote>
+<blockquote>
+<p>遇事多看底层逻辑</p>
+</blockquote>
+<blockquote>
+<p>要构建自己是人生的飞轮</p>
+<ul>
+<li>飞轮即，某一环节double了，整体就double了</li>
+<li>像amzon，产品价↓-&gt;买家↑-&gt;卖家↑-&gt;供应链↑-&gt;产品价↓。</li>
+<li>人生也是一样，构建自己的飞轮体系，才能过得不那么累。</li>
+</ul>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基础学习-时域与频域]]></title>
+        <id>https://gouzi61.github.io/post/ji-chu-xue-xi-shi-yu-yu-pin-yu/</id>
+        <link href="https://gouzi61.github.io/post/ji-chu-xue-xi-shi-yu-yu-pin-yu/">
+        </link>
+        <updated>2023-07-04T14:58:55.000Z</updated>
+        <content type="html"><![CDATA[<p>一、傅里叶变换</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基础学习-多维矩阵乘积]]></title>
+        <id>https://gouzi61.github.io/post/ji-chu-xue-xi-duo-wei-ju-zhen-cheng-ji/</id>
+        <link href="https://gouzi61.github.io/post/ji-chu-xue-xi-duo-wei-ju-zhen-cheng-ji/">
+        </link>
+        <updated>2023-06-17T10:26:58.000Z</updated>
+        <content type="html"><![CDATA[<p>一、参考：https://blog.csdn.net/Rolandxxx/article/details/122889129<br>
+二、所有大于二维的矩阵，都是以二维为基础堆叠在一起的！！！<br>
+最后矩阵运算时都可以转为常见的二维矩阵运算，在多维矩阵相乘中，需要后两维shape匹配原则，因为最后两维才是有数据的矩阵。<br>
+三、计算实例<br>
+a.shape = [2, 1, 4, 5]       b.shape = [2, 1, 4, 4,]      两矩阵相乘得到[2, 1, 4, 4]。前两维用了广播机制得到[2, 1]，后两维是矩阵乘法计算得到的[4, 4]</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基础学习-雅可比矩阵]]></title>
+        <id>https://gouzi61.github.io/post/ji-chu-xue-xi-ya-ke-bi-ju-zhen/</id>
+        <link href="https://gouzi61.github.io/post/ji-chu-xue-xi-ya-ke-bi-ju-zhen/">
+        </link>
+        <updated>2023-06-11T02:02:16.000Z</updated>
+        <content type="html"><![CDATA[<p>一、参考：https://jishuin.proginn.com/p/763bfbd303b6<br>
+二、通俗解释：雅可比矩阵表现了一个多变向量函数的最佳线性逼近，可以用来描述一些物理量之间的关系。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[人生感悟-（新机遇）刘成军讲座20230525]]></title>
+        <id>https://gouzi61.github.io/post/ren-sheng-gan-wu-xin-ji-yu-liu-cheng-jun-jiang-zuo-20230525/</id>
+        <link href="https://gouzi61.github.io/post/ren-sheng-gan-wu-xin-ji-yu-liu-cheng-jun-jiang-zuo-20230525/">
+        </link>
+        <updated>2023-05-25T06:07:36.000Z</updated>
+        <content type="html"><![CDATA[<p>1、时代的最大特征：在不确定的世界中探寻确定性、趋势性、规律性、周期性。新变量-&gt;新赛道-&gt;新周期-&gt;新机遇。现在要寻找新的变量和增量，把握发展趋势，构建新的逻辑框架。<br>
+example:小米造电车，电动车在风口上，就意味着可以获得足够的注意力，足够廉价的资本和丰富的人才，如果小米手机不在风口上，人才就全跑光了。<br>
+2、值得关注的十大趋势和机遇<br>
+<img src="https://gouzi61.github.io/post-images/1684995838116.jpg" alt="" loading="lazy"></p>
+<p>2.1数字技术赋能制造</p>
+<p>2.2通用人工智能<br>
+以ChatGPT为代表的的通用人工智能。专有模型：优点是精度高，缺点是通用性差、封闭性高、很难迁移。通用模型：优点是通用性高，缺点是大模型的安全性、训练难度高、数据精度要求高。<br>
+未来机会：生成式人工智能，演变史：经验驱动-&gt;流程驱动-&gt;数据驱动-&gt;知识驱动（模型）--《生成式人工智能：重塑商业和运营》</p>
+<p>2.3软件定义装备，数字孪生装备<br>
+“硬件通用化”+“服务可编程”</p>
+<p>2.4建设数据要素市场<br>
+数据要素是数字经济时代的关键生产要素。数据交易所：20230517北方大数据交易中心（天津）在第七届智能大会揭牌成立。<br>
+未来机会：数商，价值很大但赛道很长</p>
+<p>2.5数字经济数字中国<br>
+机会：数字产业化、产业数字化、数字化治理、数据价值化机会</p>
+<p>2.6双碳</p>
+<p>2.7人机协同</p>
+<p>2.8数字技术与产业融合催生新人才</p>
+<p>2.9科技体制上<br>
+成立中央科技委员会、重组科学技术部。<br>
+那么科技成果转化就需要大量人员：技术经理人，把技术成果推向产业，又叫“技术红娘”，需要懂市场又懂技术</p>
+<p>2.10自主可控国产化</p>
+<p>3、如何定位自己<br>
+认清自己、追寻热爱，发挥自己的优势<br>
+与趋势为伍<br>
+做一个靠谱的人<br>
+成长思维、创新思维<br>
+调动资源的能力<br>
+形成正向闭环，践行长期主义（飞轮、滚雪球）</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基础学习-transformer位置编码]]></title>
+        <id>https://gouzi61.github.io/post/ji-chu-xue-xi-transformer-wei-zhi-bian-ma/</id>
+        <link href="https://gouzi61.github.io/post/ji-chu-xue-xi-transformer-wei-zhi-bian-ma/">
+        </link>
+        <updated>2023-05-23T13:35:14.000Z</updated>
+        <content type="html"><![CDATA[<p>一、参考：https://blog.csdn.net/Kaiyuan_sjtu/article/details/119621613<br>
+二、细节<br>
+1.位置编码的作用：使输入的内容具有一定能够的位置信息<br>
+2.方法：表格型和函数型<br>
+2.1表格型<br>
+按照词的长度来分配位置ID，比如0-1范围分配位置编码[0, 0.12, 0.34, 0.55...]，但这样不等长句子的编码不同，无法表现不同句子间的相关性。再比如1-n编码[1, 2, 3, 4, 5, 6...]，但当序列足够长时，编码会很大，数值越大权重也就越大，因此不太好用。<br>
+2.2函数型<br>
+只关注一个tocken和另一个tocken的相对距离，这样就可以清晰地知道单词间距离远近的关系，位置编码公式如下所示：<br>
+<img src="https://gouzi61.github.io/post-images/1684849898042.PNG" alt="" loading="lazy"><br>
+得到位置编码后，与原向量相加，就可以得到transformer的最终输入。<br>
+<img src="https://gouzi61.github.io/post-images/1684850236673.PNG" alt="" loading="lazy"><br>
+具体的公式推导有时间再看</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[前沿学习-刘知远团队大模型公开课]]></title>
+        <id>https://gouzi61.github.io/post/qian-yan-xue-xi-liu-zhi-yuan-tuan-dui-da-mo-xing-gong-kai-ke/</id>
+        <link href="https://gouzi61.github.io/post/qian-yan-xue-xi-liu-zhi-yuan-tuan-dui-da-mo-xing-gong-kai-ke/">
+        </link>
+        <updated>2023-05-15T14:47:08.000Z</updated>
+        <content type="html"><![CDATA[<p>一、课程地址：https://www.bilibili.com/video/BV1UG411p7zv?p=1&amp;vd_source=9485c4461ffe781dfaaf5fead4dd80cc</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[前沿学习-大模型的5大挑战以及相对前沿的解决方案]]></title>
+        <id>https://gouzi61.github.io/post/qian-yan-xue-xi-da-mo-xing-de-5-da-tiao-zhan-yi-ji-xiang-dui-qian-yan-de-jie-jue-fang-an/</id>
+        <link href="https://gouzi61.github.io/post/qian-yan-xue-xi-da-mo-xing-de-5-da-tiao-zhan-yi-ji-xiang-dui-qian-yan-de-jie-jue-fang-an/">
+        </link>
+        <updated>2023-05-13T01:32:45.000Z</updated>
+        <content type="html"><![CDATA[<p>一、清华大学团队的讲座，网址：https://www.bilibili.com/video/BV1pM4y187LM<br>
+二、汇报人：清华大学-刘知远<br>
+三、内容：<br>
+1.挑战一<br>
+挑战：大模型微调难，模型很大时，进行全参数微调有些困难。<br>
+可以做：那么如何微调参数使其更好地适应下游任务是一个重要命题<br>
+思路：仅优化小部分参数即可达到全参数微调效果。大模型参数高效微调（Delta Tuning）:保持模型大部分参数不变，仅更新极少参数（&lt;1%）,有一个开源工具可参考：OpenDelta<br>
+大模型特性1：可对下游任务进行高效适配<br>
+2.挑战二<br>
+挑战：大模型计算复杂度高、应用模式受限<br>
+可以做：向人脑学习，如何更快反应实现复杂认知<br>
+搭模型特性2：涌现稀疏激活特性（80%输入只激活前馈网络&lt;5%神经元，但几乎所有神经元都会在某些输入中被激活），可持续增长成为可能。未来探索更加高效的，基于稀疏激活的神经网络的架构，有一个工作MoEfication完成上述工作。<br>
+3.挑战三<br>
+挑战：不可解释、可靠性低<br>
+可以做&amp;思路：定位大模型中对应指示、技能的特异神经元。比如某一些神经元的激活与标签有高度的特异性，如下图，某些神经元起正向激活，某些神经元起负向激活。且相似任务的神经元激活状态相似。<br>
+<img src="https://gouzi61.github.io/post-images/1684161386745.PNG" alt="" loading="lazy"><br>
+大模型特性3：存在特性神经元。可以根据神经元激活分布之间的相似性，对不同任务进行建模。且预训练语言模型涌现出类人情感的神经元。<br>
+4.挑战四<br>
+挑战:无法利用外部复杂工具，生成信息缺少依据。<br>
+思路：模拟人类学会使用复杂工具，记录人类实用工具的行为数据，并让大模型模仿人类行为。<br>
+大模型特性4：大模型可有效建模用户行为，掌握高级认知工具<br>
+大模型特性5：具备强大通用性：有效降低开发成本、有效降低适配成本。大模型将成为智能时代 基础设施<br>
+开源社区：OpenBMB，有模型训练、压缩、推理、微调。<br>
+5.总结<br>
+！！！有待利用：增量微调、稀疏激活、特异化、工具学习、通用性</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[论文学习-“时间序列的分析与挖掘”讲座]]></title>
+        <id>https://gouzi61.github.io/post/lun-wen-xue-xi-shi-jian-xu-lie-de-fen-xi-yu-wa-jue-jiang-zuo/</id>
+        <link href="https://gouzi61.github.io/post/lun-wen-xue-xi-shi-jian-xu-lie-de-fen-xi-yu-wa-jue-jiang-zuo/">
+        </link>
+        <updated>2023-05-11T09:31:54.000Z</updated>
+        <content type="html"><![CDATA[<p>一、回放地址：https://lec.h5.xeknow.com/sl/4lvJq4（不知道有效期到多久）<br>
+二、具体内容<br>
+1.生理时序数据研究，下图介绍了三个工作<br>
+<img src="https://gouzi61.github.io/post-images/1683856263827.PNG" alt="" loading="lazy"><br>
+1.1 第一个工作，如下图。针对生理信号的特点，提出不同类型的生理信号通常具有不同的判别性波形。<br>
+<img src="https://gouzi61.github.io/post-images/1683857085273.PNG" alt="" loading="lazy"><br>
+有些方法利用时频图像作为模型输入来间接捕获判别性波，可能产生部分信息丢失。为了直接捕获判别性波形，借鉴了图像中的U2-Net，可以从图像中把关键性的东西拿出来，如下图。提出的方法可以提取出显著性波形。<br>
+<img src="https://gouzi61.github.io/post-images/1683857425464.PNG" alt="" loading="lazy"><br>
+1.2第二个工作，多维度特征和多模态特征，提出了多维度数据组合以及网络框架，如下图。<br>
+<img src="https://gouzi61.github.io/post-images/1683857783556.PNG" alt="" loading="lazy"><br>
+如何充分建模生理信号的互补性，选了图神经网络，如下图。<br>
+<img src="https://gouzi61.github.io/post-images/1683857927593.PNG" alt="" loading="lazy"><br>
+1.3第三个工作，如何解决不同受试者的差异性，可能类似于发酵不同菌，且问题更加困难，问题定义以及困难如下图。<br>
+<img src="https://gouzi61.github.io/post-images/1683858037904.PNG" alt="" loading="lazy"><br>
+使用了一种思想，使模型无法分辨出样本数据来源于哪个源域，从而引导特征提取器学习域不变特征，如下图，其实用对比学习就能做出这种对抗性的效果<br>
+<img src="https://gouzi61.github.io/post-images/1683861107214.PNG" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[论文学习-好用的科研工具整理]]></title>
+        <id>https://gouzi61.github.io/post/lun-wen-xue-xi-hao-yong-de-ke-yan-gong-ju-zheng-li/</id>
+        <link href="https://gouzi61.github.io/post/lun-wen-xue-xi-hao-yong-de-ke-yan-gong-ju-zheng-li/">
+        </link>
+        <updated>2023-05-11T09:19:10.000Z</updated>
+        <content type="html"><![CDATA[<p>1.Papers with Code：https://paperswithcode.com/  梳理了开源代码的论文<br>
+2.科研助理：https://elicit.org/  输入一个问题，这个网站会从论文库中寻找这个问题的答案，并给出论文<br>
+3.学术措辞库：http://www.phrasebank.manchester.ac.uk  给出论文每一部分的表述建议<br>
+4.清华大学建立的科学情报库：https://www.aminer.cn/<br>
+5.英文写作辅助工具：https://www.grammarly.com/<br>
+6.论文检索与相关论文，并组成知识图谱：https://www.connectedpapers.com/<br>
+7.抠图神器：https://clipdrop.co/<br>
+8.文字生成图像：https://www.fabrie.cn/home<br>
+9.（ChatPPT）自动生成PPT：https://motion.yoo-ai.com/</p>
+]]></content>
+    </entry>
+</feed>
