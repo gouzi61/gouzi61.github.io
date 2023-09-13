@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>前沿学习-大模型的5大挑战以及相对前沿的解决方案 | 菜狗子的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://gouzi61.github.io/favicon.ico?v=1694586744128">
+<link rel="stylesheet" href="https://gouzi61.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="一、清华大学团队的讲座，网址：https://www.bilibili.com/video/BV1pM4y187LM
+二、汇报人：清华大学-刘知远
+三、内容：
+1.挑战一
+挑战：大模型微调难，模型很大时，进行全参数微调有些困难。
+可以做：那..." />
+    <meta name="keywords" content="前沿学习" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://gouzi61.github.io">
+        <img src="https://gouzi61.github.io/images/avatar.png?v=1694586744128" class="site-logo">
+        <h1 class="site-title">菜狗子的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://gouzi61.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">前沿学习-大模型的5大挑战以及相对前沿的解决方案</h2>
+            <div class="post-date">2023-05-13</div>
+            
+            <div class="post-content" v-pre>
+              <p>一、清华大学团队的讲座，网址：https://www.bilibili.com/video/BV1pM4y187LM<br>
+二、汇报人：清华大学-刘知远<br>
+三、内容：<br>
+1.挑战一<br>
+挑战：大模型微调难，模型很大时，进行全参数微调有些困难。<br>
+可以做：那么如何微调参数使其更好地适应下游任务是一个重要命题<br>
+思路：仅优化小部分参数即可达到全参数微调效果。大模型参数高效微调（Delta Tuning）:保持模型大部分参数不变，仅更新极少参数（&lt;1%）,有一个开源工具可参考：OpenDelta<br>
+大模型特性1：可对下游任务进行高效适配<br>
+2.挑战二<br>
+挑战：大模型计算复杂度高、应用模式受限<br>
+可以做：向人脑学习，如何更快反应实现复杂认知<br>
+搭模型特性2：涌现稀疏激活特性（80%输入只激活前馈网络&lt;5%神经元，但几乎所有神经元都会在某些输入中被激活），可持续增长成为可能。未来探索更加高效的，基于稀疏激活的神经网络的架构，有一个工作MoEfication完成上述工作。<br>
+3.挑战三<br>
+挑战：不可解释、可靠性低<br>
+可以做&amp;思路：定位大模型中对应指示、技能的特异神经元。比如某一些神经元的激活与标签有高度的特异性，如下图，某些神经元起正向激活，某些神经元起负向激活。且相似任务的神经元激活状态相似。<br>
+<img src="https://gouzi61.github.io/post-images/1684161386745.PNG" alt="" loading="lazy"><br>
+大模型特性3：存在特性神经元。可以根据神经元激活分布之间的相似性，对不同任务进行建模。且预训练语言模型涌现出类人情感的神经元。<br>
+4.挑战四<br>
+挑战:无法利用外部复杂工具，生成信息缺少依据。<br>
+思路：模拟人类学会使用复杂工具，记录人类实用工具的行为数据，并让大模型模仿人类行为。<br>
+大模型特性4：大模型可有效建模用户行为，掌握高级认知工具<br>
+大模型特性5：具备强大通用性：有效降低开发成本、有效降低适配成本。大模型将成为智能时代 基础设施<br>
+开源社区：OpenBMB，有模型训练、压缩、推理、微调。<br>
+5.总结<br>
+！！！有待利用：增量微调、稀疏激活、特异化、工具学习、通用性</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://gouzi61.github.io/tag/NYOae-4UQ/" class="tag">
+                    前沿学习
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://gouzi61.github.io/post/lun-wen-xue-xi-shi-jian-xu-lie-de-fen-xi-yu-wa-jue-jiang-zuo/">
+                  <h3 class="post-title">
+                    论文学习-“时间序列的分析与挖掘”讲座
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

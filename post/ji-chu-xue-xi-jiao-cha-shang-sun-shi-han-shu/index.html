@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>基础学习-交叉熵损失函数 | 菜狗子的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://gouzi61.github.io/favicon.ico?v=1694586744128">
+<link rel="stylesheet" href="https://gouzi61.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="有很多损失函数都用到了交叉熵的思想，这里具体学习一下，(参考博客)[https://blog.csdn.net/chao_shine/article/details/89925762]
+相对熵
+
+又称KL散度，用来描述两个概率分布的差异性，..." />
+    <meta name="keywords" content="基础学习" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://gouzi61.github.io">
+        <img src="https://gouzi61.github.io/images/avatar.png?v=1694586744128" class="site-logo">
+        <h1 class="site-title">菜狗子的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://gouzi61.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">基础学习-交叉熵损失函数</h2>
+            <div class="post-date">2023-07-21</div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="有很多损失函数都用到了交叉熵的思想这里具体学习一下参考博客httpsblogcsdnnetchao_shinearticledetails89925762">有很多损失函数都用到了交叉熵的思想，这里具体学习一下，(参考博客)[https://blog.csdn.net/chao_shine/article/details/89925762]</h1>
+<h1 id="相对熵">相对熵</h1>
+<ul>
+<li>又称KL散度，用来描述两个概率分布的差异性，公式如下<img src="https://gouzi61.github.io/post-images/1689928605569.png" alt="" loading="lazy"></li>
+<li>其中，p(x)是目标分布，q(x)是预测的匹配分布。简单理解：p(x)是真实值，而q(x)是后加进来的，多了一些不确定性因素，这个增加的信息量就是熵。在数值上来说，相对熵越大，就代表两个分布的差异性越大；相对熵越小，则需要两个分布尽可能相等。</li>
+<li>相对熵与交叉熵的关系：最鲜花交叉熵就可以达到最小化相对熵的目的，因此只用考虑交叉熵即可<img src="https://gouzi61.github.io/post-images/1689929632781.png" alt="" loading="lazy"></li>
+</ul>
+<h1 id="交叉熵">交叉熵</h1>
+<ul>
+<li>交叉熵可以看做是概率分布<img src="https://gouzi61.github.io/post-images/1689929554314.png" alt="" loading="lazy"></li>
+<li>预测量pred[256, 254]256代表样本量，254代表这一个样本所有的标签得分，真实值true[256]其中都为0，计算交叉熵损失时，会将pred254个预测得分中的第一个（0号）当成对的，因此去不断地将第一个值调成最大。</li>
+</ul>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://gouzi61.github.io/tag/7EvrNUevp/" class="tag">
+                    基础学习
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://gouzi61.github.io/post/ji-chu-xue-xi-zhu-yi-li-ji-zhi/">
+                  <h3 class="post-title">
+                    基础学习-注意力机制
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

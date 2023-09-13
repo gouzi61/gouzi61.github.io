@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>基础学习-多维矩阵乘积 | 菜狗子的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://gouzi61.github.io/favicon.ico?v=1694586744128">
+<link rel="stylesheet" href="https://gouzi61.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="参考地址
+所有大于二维的矩阵，都是以二维为基础堆叠在一起的！！！
+最后矩阵运算时都可以转为常见的二维矩阵运算，在多维矩阵相乘中，需要后两维shape匹配原则，因为最后两维才是有数据的矩阵。
+计算实例
+a.shape = [2, 1, 4, ..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://gouzi61.github.io">
+        <img src="https://gouzi61.github.io/images/avatar.png?v=1694586744128" class="site-logo">
+        <h1 class="site-title">菜狗子的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://gouzi61.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">基础学习-多维矩阵乘积</h2>
+            <div class="post-date">2023-06-17</div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="参考地址"><a href="https://blog.csdn.net/Rolandxxx/article/details/122889129">参考地址</a></h1>
+<h1 id="所有大于二维的矩阵都是以二维为基础堆叠在一起的">所有大于二维的矩阵，都是以二维为基础堆叠在一起的！！！</h1>
+<p>最后矩阵运算时都可以转为常见的二维矩阵运算，在多维矩阵相乘中，需要后两维shape匹配原则，因为最后两维才是有数据的矩阵。</p>
+<h1 id="计算实例">计算实例</h1>
+<p>a.shape = [2, 1, 4, 5]       b.shape = [2, 1, 4, 4,]      两矩阵相乘得到[2, 1, 4, 4]。前两维用了广播机制得到[2, 1]，后两维是矩阵乘法计算得到的[4, 4]</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://gouzi61.github.io/post/ji-chu-xue-xi-ya-ke-bi-ju-zhen/">
+                  <h3 class="post-title">
+                    基础学习-雅可比矩阵
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

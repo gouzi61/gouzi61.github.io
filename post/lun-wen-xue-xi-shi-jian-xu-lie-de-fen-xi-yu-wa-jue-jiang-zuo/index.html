@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>论文学习-“时间序列的分析与挖掘”讲座 | 菜狗子的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://gouzi61.github.io/favicon.ico?v=1694586744128">
+<link rel="stylesheet" href="https://gouzi61.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="一、回放地址：https://lec.h5.xeknow.com/sl/4lvJq4（不知道有效期到多久）
+二、具体内容
+1.生理时序数据研究，下图介绍了三个工作
+
+1.1 第一个工作，如下图。针对生理信号的特点，提出不同类型的生理信号通常..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://gouzi61.github.io">
+        <img src="https://gouzi61.github.io/images/avatar.png?v=1694586744128" class="site-logo">
+        <h1 class="site-title">菜狗子的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://gouzi61.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">论文学习-“时间序列的分析与挖掘”讲座</h2>
+            <div class="post-date">2023-05-11</div>
+            
+            <div class="post-content" v-pre>
+              <p>一、回放地址：https://lec.h5.xeknow.com/sl/4lvJq4（不知道有效期到多久）<br>
+二、具体内容<br>
+1.生理时序数据研究，下图介绍了三个工作<br>
+<img src="https://gouzi61.github.io/post-images/1683856263827.PNG" alt="" loading="lazy"><br>
+1.1 第一个工作，如下图。针对生理信号的特点，提出不同类型的生理信号通常具有不同的判别性波形。<br>
+<img src="https://gouzi61.github.io/post-images/1683857085273.PNG" alt="" loading="lazy"><br>
+有些方法利用时频图像作为模型输入来间接捕获判别性波，可能产生部分信息丢失。为了直接捕获判别性波形，借鉴了图像中的U2-Net，可以从图像中把关键性的东西拿出来，如下图。提出的方法可以提取出显著性波形。<br>
+<img src="https://gouzi61.github.io/post-images/1683857425464.PNG" alt="" loading="lazy"><br>
+1.2第二个工作，多维度特征和多模态特征，提出了多维度数据组合以及网络框架，如下图。<br>
+<img src="https://gouzi61.github.io/post-images/1683857783556.PNG" alt="" loading="lazy"><br>
+如何充分建模生理信号的互补性，选了图神经网络，如下图。<br>
+<img src="https://gouzi61.github.io/post-images/1683857927593.PNG" alt="" loading="lazy"><br>
+1.3第三个工作，如何解决不同受试者的差异性，可能类似于发酵不同菌，且问题更加困难，问题定义以及困难如下图。<br>
+<img src="https://gouzi61.github.io/post-images/1683858037904.PNG" alt="" loading="lazy"><br>
+使用了一种思想，使模型无法分辨出样本数据来源于哪个源域，从而引导特征提取器学习域不变特征，如下图，其实用对比学习就能做出这种对抗性的效果<br>
+<img src="https://gouzi61.github.io/post-images/1683861107214.PNG" alt="" loading="lazy"></p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://gouzi61.github.io/post/lun-wen-xue-xi-hao-yong-de-ke-yan-gong-ju-zheng-li/">
+                  <h3 class="post-title">
+                    论文学习-好用的科研工具整理
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

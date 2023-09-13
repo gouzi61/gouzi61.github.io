@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>基础学习-时域与频域 | 菜狗子的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://gouzi61.github.io/favicon.ico?v=1694586744128">
+<link rel="stylesheet" href="https://gouzi61.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="时域和频域的关系
+
+时域：时域是信号在时间轴随时间变化的总体概括
+
+
+横轴：时间
+
+
+
+
+纵轴：信号的变化
+
+
+频域：描述频率变化和幅度变化的关系
+
+
+横轴：频率
+
+
+
+
+纵轴：该频率信号的幅度
+
+
+时域变换到频域可以使用傅里叶变换来实现
+..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://gouzi61.github.io">
+        <img src="https://gouzi61.github.io/images/avatar.png?v=1694586744128" class="site-logo">
+        <h1 class="site-title">菜狗子的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://gouzi61.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">基础学习-时域与频域</h2>
+            <div class="post-date">2023-07-04</div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="时域和频域的关系">时域和频域的关系</h1>
+<ul>
+<li>时域：时域是信号在时间轴随时间变化的总体概括</li>
+<li>
+<ul>
+<li>横轴：时间</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>纵轴：信号的变化</li>
+</ul>
+</li>
+<li>频域：描述频率变化和幅度变化的关系</li>
+<li>
+<ul>
+<li>横轴：频率</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>纵轴：该频率信号的幅度</li>
+</ul>
+</li>
+<li>时域变换到频域可以使用傅里叶变换来实现</li>
+</ul>
+<h1 id="傅里叶变换">傅里叶变换</h1>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1pW411J7s8/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9485c4461ffe781dfaaf5fead4dd80cc">B站动画讲解</a></li>
+</ul>
+<blockquote>
+<p>首先要明确，一个复杂信号是多个信号叠加而来的，方向相反就抵消，方向相同则增强，如下图所示</p>
+<ul>
+<li><img src="https://gouzi61.github.io/post-images/1688626854708.png" alt="图1  信号叠加" loading="lazy"></li>
+<li>那么核心问题就是：如何把这么一个复杂信号分解成几个简单信号呢？</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>我们现在的目的就是寻找一个数学公式，使他能够区别对待不同的频率</p>
+<ul>
+<li>想像信号的某一部分，我们将其放在一个圆上，如下图所示，任意时刻下，高处的离圆心更远<img src="https://gouzi61.github.io/post-images/1688628420713.png" alt="" loading="lazy"></li>
+<li>继续想像，现在的信号是每秒震荡三次，现在的图像是每过两秒，图像就绕圆一周<img src="https://gouzi61.github.io/post-images/1688628570630.png" alt="" loading="lazy"></li>
+<li>有趣的是，当缠绕半径和信号频率相等时，会出现一个特别的情况，<strong>所有高处的点，都落在圆右侧，所有低处的点，都落在圆左侧</strong><img src="https://gouzi61.github.io/post-images/1688628887928.png" alt="" loading="lazy"></li>
+<li>现在我们想象在圆上的这个图形是有质心的，在缠绕频率&lt;信号频率时，质心在原点附近，而缠绕频率=信号频率时，质心会突然远离原点，我们做一个图来刻画质心的位置变化<img src="https://gouzi61.github.io/post-images/1688629551606.png" alt="" loading="lazy"></li>
+<li>现在我们对2HZ+3HZ的叠加信号作图，会神奇地发现质心会在2和3时有波峰<img src="https://gouzi61.github.io/post-images/1688631155491.png" alt="" loading="lazy"></li>
+<li>到此为止我们貌似可以从一个复杂信号中分出多个简单信号了</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>现在我们开始探讨上述的“质心”代表的是什么</p>
+<ul>
+<li>我们用复数来刻画质心的位置，这里有一个重要性质：e^2πift可以在复平面画圆，我们直接拿来用。当f=1/10时，此向量就每10秒转一整圈。<img src="https://gouzi61.github.io/post-images/1688631709072.png" alt="" loading="lazy"></li>
+<li>我们现在再乘上一个信号，就可以在复平面刻画信号了<img src="https://gouzi61.github.io/post-images/1688632385523.png" alt="" loading="lazy"></li>
+<li>那么质心如何取呢？一个直观的思路是随机取几个信号点再取平均<img src="https://gouzi61.github.io/post-images/1688632461938.png" alt="" loading="lazy"></li>
+<li>进一步，我们自然而然就想到使用积分求质心<img src="https://gouzi61.github.io/post-images/1688632524305.png" alt="" loading="lazy"></li>
+<li>此时，真正的傅里叶变换就出来了，需要注意的是，傅里叶公式并没有取平均，而是对波峰不断积累，出现的越多，波峰也就越多。<img src="https://gouzi61.github.io/post-images/1688632639762.png" alt="" loading="lazy"></li>
+</ul>
+</blockquote>
+<h1 id="小波变换">小波变换</h1>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1LW411g783/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9485c4461ffe781dfaaf5fead4dd80cc">B站教程</a></li>
+<li>傅里叶变换（用于平稳时间序列）并不能保存信号的相位信息且不能有效代表信号间的突然变化，因此考虑使用小波变换（可用于非平稳时间序列）</li>
+<li>傅里叶变换是把信号拆解成不同频率的信号，而小波变换是把一个信号拆解为不同胖瘦的小波<img src="https://gouzi61.github.io/post-images/1688898163936.png" alt="" loading="lazy"></li>
+</ul>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://gouzi61.github.io/post/ji-chu-xue-xi-duo-wei-ju-zhen-cheng-ji/">
+                  <h3 class="post-title">
+                    基础学习-多维矩阵乘积
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

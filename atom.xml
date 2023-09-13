@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://gouzi61.github.io</id>
+    <title>菜狗子的博客</title>
+    <updated>2023-09-13T06:32:33.486Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://gouzi61.github.io"/>
+    <link rel="self" href="https://gouzi61.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://gouzi61.github.io/images/avatar.png</logo>
+    <icon>https://gouzi61.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, 菜狗子的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[论文学习-论文写作技巧讲座]]></title>
+        <id>https://gouzi61.github.io/post/lun-wen-xue-xi-lun-wen-xie-zuo-ji-qiao-jiang-zuo/</id>
+        <link href="https://gouzi61.github.io/post/lun-wen-xue-xi-lun-wen-xie-zuo-ji-qiao-jiang-zuo/">
+        </link>
+        <updated>2023-09-07T13:36:15.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="题为基于创新点得的论文写作技巧已经保存到百度网盘学习资料中">题为“基于创新点得的论文写作技巧”已经保存到百度网盘学习资料中</h1>
+<h1 id="标题-title">标题 Title</h1>
+<ul>
+<li>四个创新点的共同点+解决什么问题+基于什么场景</li>
+</ul>
+<h1 id="摘要-abstract">摘要 Abstract</h1>
+<ul>
+<li>初稿最后写摘要</li>
+<li>四个创新点放进去：第一句话应用难题，如车联网场景下数据隐私问题，针对这个问题我提出了一个什么东西，然后四个创新点写出来（写出能够干什么为了达到什么目的，不要像流水帐一样单纯罗列。如为了考虑要不要共享，而做了个啥创新）</li>
+<li>有现场数据的话一定要写出来</li>
+<li>不要对技术的细节做过多描述，细节的描述是放在结论和讨论中的，做一些深层次的探讨</li>
+<li>审稿人第一眼看的就是标题和摘要，这一步很重要</li>
+</ul>
+<h1 id="引言-introduction">引言 Introduction</h1>
+<ul>
+<li>一区二区3-4个创新点（可以是小创新点）：写应用背景，列举出有1、2、3、4个难题，我的创新点出在哪几个难题上（如预处理+特征筛选+基模型改进+提升程度），但这四个要成为一个体系。这就是自己的contribution</li>
+<li>要在这一部分对现有进行描述，后面才能做对比，不然读者会一头雾水。递进递进递进</li>
+<li>背景：说明研究问题的目前总体情况或历史：大背景，如车联网数据共享在5G下，存在哪些问题，少</li>
+<li>意义：说明研究的意义或必要性：大背景下为嘛要做车联网的轨迹预测，轨迹预测下的数据预测多方协同，多</li>
+<li>进展：说明现有发现、报告或研究：做轨迹预测的方法有哪些，为什么用这种方法。有些方法用样本筛选，样本筛选又怎么样。</li>
+<li>目的：说明本研究的目的：逐步引出自己的方法，为什么别人没有把它用进来，这个方法适用于什么场景，在这个场景下为什么具有优势，我可以解决什么问题。</li>
+<li>范围：说明要研究问题的具体范围：解决的问题可以缩小到什么范围。哪个目的哪个范围我的方法最有优势</li>
+</ul>
+<h1 id="方法-methods">方法 Methods</h1>
+<ul>
+<li>第二章的额基础知识是帮助读者补充基础知识，才能看懂我这个方向的论文</li>
+<li>3.1一个总的方法框架图，每个创新点都有一个小图片，这一步目的是啥，创新性在哪，编辑主要是看图片的。小创新点的图片在后面每一小节进行展开</li>
+<li>3.5写一个总括，把上面几个创新点联系起来，说明他们怎么工作的</li>
+</ul>
+<h1 id="实验">实验</h1>
+<ul>
+<li>让研究的客观结果说话，不要添枝加叶</li>
+<li>对比实验体现自己的算法比别人的算法优势在哪里</li>
+</ul>
+<h1 id="讨论">讨论</h1>
+<ul>
+<li>结论和讨论是为了证明自己解决了这个问题，他们两个是放在一起的</li>
+<li>简要说明研究背景</li>
+<li>简要介绍总的发现</li>
+<li>介绍具体要点，多说自己方法优势</li>
+<li>与现有发现进行比较，多说自己方法优势</li>
+<li>意义，多说自己方法优势</li>
+<li>结论，多说自己方法优势</li>
+<li>前瞻研究</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基础学习-torch函数]]></title>
+        <id>https://gouzi61.github.io/post/ji-chu-xue-xi-torch-han-shu/</id>
+        <link href="https://gouzi61.github.io/post/ji-chu-xue-xi-torch-han-shu/">
+        </link>
+        <updated>2023-09-06T05:55:06.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="做项目时对torch函数的积累">做项目时对torch函数的积累</h1>
+<ul>
+<li>torch.einsum()<br>
+直接上例子<img src="https://gouzi61.github.io/post-images/1693980554657.jpg" alt="" loading="lazy"></li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[前沿学习-OpenBMB大模型公开课]]></title>
+        <id>https://gouzi61.github.io/post/qian-yan-xue-xi-openbmb-da-mo-xing-gong-kai-ke/</id>
+        <link href="https://gouzi61.github.io/post/qian-yan-xue-xi-openbmb-da-mo-xing-gong-kai-ke/">
+        </link>
+        <updated>2023-08-07T02:38:15.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="课程链接httpswwwopenbmborgcommunitycourse">(课程链接)[https://www.openbmb.org/community/course]</h1>
+<h1 id="hugging-face">hugging-face</h1>
+<ul>
+<li>它写好了大模型预训练和微调的包，可以直接调</li>
+</ul>
+<h1 id="如何高效地用预训练语言模型">如何高效地用预训练语言模型</h1>
+<ul>
+<li>GPT的微调方法：接一个linear对模型做微调<img src="https://gouzi61.github.io/post-images/1692166951114.png" alt="" loading="lazy"></li>
+<li>下一阶段的T5不再使用接linear的方式，就不用再对每个任务做重新训练了，T5模型把输出也设置为一个tocken而不是0,1，这样就以encoder-decoder的形式把任务统一化了，之后在特定数据集做微调的时候只要把input做好就行<img src="https://gouzi61.github.io/post-images/1692168328861.png" alt="" loading="lazy"></li>
+</ul>
+<h1 id="prompt-learning">Prompt-learning</h1>
+<ul>
+<li>GPT3参数量巨大，需要一种微调方法去微调参数，在下游任务中GPT3没有微调任何一个参数，而是使用prompt包装一个任务，这样模型就会给出我们想要的输出。但这类in-context learning没有办法解释它为什么work。<img src="https://gouzi61.github.io/post-images/1692168818238.png" alt="" loading="lazy"></li>
+<li>以预训练模型如何进行情感分类为例<img src="https://gouzi61.github.io/post-images/1692170005446.png" alt="" loading="lazy"></li>
+<li>如何设置prompt提示工程是一个研究热点（也就是如何设置Template）</li>
+<li>在大模型上，冻结大模型参数去微调soft embedding是和全参数微调一样好的，但在中小模型上就不如全参数微调了<img src="https://gouzi61.github.io/post-images/1692174769040.png" alt="" loading="lazy"></li>
+<li>prompt中的Verbalizer部分，也就是怎么去用提取好的上下文表示，是一个重要部分（对我的模型微调可能有启发）</li>
+</ul>
+<h1 id="delta-tuning">Delta Tuning</h1>
+<ul>
+<li>增量式：模型固定住，只优化新加的参数（例如：加入两层MLP，在微调时只微调这个MLP）</li>
+<li>BitFit：只微调偏置项b</li>
+<li>重参数化：（假设有一个公共低维子空间，在这个空间中找一个解）</li>
+<li>未来发展范式，只给用户返回delta tunning的那一小部分模型<img src="https://gouzi61.github.io/post-images/1692178085185.png" alt="" loading="lazy"></li>
+<li>学到了4-15</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基础学习-交叉熵损失函数]]></title>
+        <id>https://gouzi61.github.io/post/ji-chu-xue-xi-jiao-cha-shang-sun-shi-han-shu/</id>
+        <link href="https://gouzi61.github.io/post/ji-chu-xue-xi-jiao-cha-shang-sun-shi-han-shu/">
+        </link>
+        <updated>2023-07-21T07:49:16.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="有很多损失函数都用到了交叉熵的思想这里具体学习一下参考博客httpsblogcsdnnetchao_shinearticledetails89925762">有很多损失函数都用到了交叉熵的思想，这里具体学习一下，(参考博客)[https://blog.csdn.net/chao_shine/article/details/89925762]</h1>
+<h1 id="相对熵">相对熵</h1>
+<ul>
+<li>又称KL散度，用来描述两个概率分布的差异性，公式如下<img src="https://gouzi61.github.io/post-images/1689928605569.png" alt="" loading="lazy"></li>
+<li>其中，p(x)是目标分布，q(x)是预测的匹配分布。简单理解：p(x)是真实值，而q(x)是后加进来的，多了一些不确定性因素，这个增加的信息量就是熵。在数值上来说，相对熵越大，就代表两个分布的差异性越大；相对熵越小，则需要两个分布尽可能相等。</li>
+<li>相对熵与交叉熵的关系：最鲜花交叉熵就可以达到最小化相对熵的目的，因此只用考虑交叉熵即可<img src="https://gouzi61.github.io/post-images/1689929632781.png" alt="" loading="lazy"></li>
+</ul>
+<h1 id="交叉熵">交叉熵</h1>
+<ul>
+<li>交叉熵可以看做是概率分布<img src="https://gouzi61.github.io/post-images/1689929554314.png" alt="" loading="lazy"></li>
+<li>预测量pred[256, 254]256代表样本量，254代表这一个样本所有的标签得分，真实值true[256]其中都为0，计算交叉熵损失时，会将pred254个预测得分中的第一个（0号）当成对的，因此去不断地将第一个值调成最大。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基础学习-注意力机制]]></title>
+        <id>https://gouzi61.github.io/post/ji-chu-xue-xi-zhu-yi-li-ji-zhi/</id>
+        <link href="https://gouzi61.github.io/post/ji-chu-xue-xi-zhu-yi-li-ji-zhi/">
+        </link>
+        <updated>2023-07-17T09:16:41.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="注意力机制发展史"><a href="https://mp.weixin.qq.com/s?__biz=MzI4MDYzNzg4Mw==&amp;mid=2247506890&amp;idx=4&amp;sn=12445fc7d65284d0db385cc316c4e9cb&amp;chksm=ebb7e31edcc06a089746a1c2a3ac192a1f859b2e0f757e94bcd01bd4b64a8025aa8ebf3a3070&amp;scene=27">注意力机制发展史</a></h1>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[人生感悟-方法论-如何快速的进到一个领域]]></title>
+        <id>https://gouzi61.github.io/post/ren-sheng-gan-wu-fang-fa-lun-ru-he-kuai-su-de-jin-dao-yi-ge-ling-yu/</id>
+        <link href="https://gouzi61.github.io/post/ren-sheng-gan-wu-fang-fa-lun-ru-he-kuai-su-de-jin-dao-yi-ge-ling-yu/">
+        </link>
+        <updated>2023-07-13T07:35:44.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="要解决的问题是什么快速搜索名词解释-相关概念-快速了解文献">要解决的问题是什么（快速搜索名词解释、相关概念、快速了解文献）</h1>
+<h1 id="已有什么解决方案他们有什么不足">已有什么解决方案，他们有什么不足？</h1>
+<h1 id="针对这个不足或空白我们可以做什么">针对这个不足或空白我们可以做什么</h1>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基础学习-相似度算法]]></title>
+        <id>https://gouzi61.github.io/post/ji-chu-xue-xi-xiang-si-du-suan-fa/</id>
+        <link href="https://gouzi61.github.io/post/ji-chu-xue-xi-xiang-si-du-suan-fa/">
+        </link>
+        <updated>2023-07-12T03:13:42.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="在进行对比学习算法复现时注意到可以有多种相似度度量方法来计算损失以达到表示拉进与拉远在此拓展一下看看底层原理视图寻找更优的相似度度量算法-参考博客">在进行对比学习算法复现时，注意到可以有多种相似度度量方法来计算损失，以达到表示拉进与拉远，在此拓展一下，看看底层原理，视图寻找更优的相似度度量算法。<a href="https://blog.csdn.net/zz_dd_yy/article/details/51926305">参考博客</a></h1>
+<h1 id="余弦相似度">余弦相似度</h1>
+<ul>
+<li>用向量空间中两个向量夹角的余弦值作为衡量两个个体间差异大小的度量。余弦值越接近1，表明夹角越接近0°，两个向量就越相似</li>
+<li>相比于欧氏距离，余弦距离更关注两个向量在方向上的差异，从三维坐标系中可以明显地看出他们的差异<img src="https://gouzi61.github.io/post-images/1689132530376.png" alt="" loading="lazy"></li>
+<li>欧氏距离适合从维度的数值大小中体现差异的分析，如使用用户行为指标分析用户价值的相似度或差异</li>
+<li>余弦距离对绝对的数值不敏感而对方向上的差异不敏感，如用于使用用户对内容评分来区分兴趣的相似度和差异，同时修正了用户间可能存在的度量标准不统一问题</li>
+<li>举个栗子</li>
+<li>
+<ul>
+<li>场景：用户对内容评分制，X和Y两个用户对两个内容的评分分别为（1， 2）和（4， 5），使用余弦相似度的得分是0.98，两者极为相似，但从评分上看X彬关不太喜欢2内容，而Y喜欢，余弦相似度对数值的不敏感导致了结果的误差。相应的就出现了“调整余弦相似度”算法，只要对输入数据做一个归一化就行了</li>
+</ul>
+</li>
+</ul>
+<h1 id="jaccard-相似度">Jaccard 相似度</h1>
+<ul>
+<li>主要用于布尔值度量的个体间的相似度，只能获得“是否相同”这个结果</li>
+</ul>
+<h1 id="点积相似度">点积相似度</h1>
+<ul>
+<li>相比于余弦相似度，引入了模的信息，使问题更加复杂</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[人生感悟-晶姐语录]]></title>
+        <id>https://gouzi61.github.io/post/ren-sheng-gan-wu-jing-jie-yu-lu/</id>
+        <link href="https://gouzi61.github.io/post/ren-sheng-gan-wu-jing-jie-yu-lu/">
+        </link>
+        <updated>2023-07-05T07:32:17.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="技术">技术</h1>
+<blockquote>
+<p>大模型的催生了一大批自动化写代码的工具，在未来计算机就业将会向两方面倾斜</p>
+<ul>
+<li>测试岗位：对代码生成工具生成的代码进行测试并修改</li>
+<li>产品、需求分析师，这一部分是大模型不能替代的</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>清晰的写出问题，问题就已经解决了一半。</p>
+</blockquote>
+<blockquote>
+<p>看论文时要记录的是：什么值得借鉴。一周一重温自己的思维导图，并思考这个借鉴的点是否合理，看有没有变化</p>
+</blockquote>
+<blockquote>
+<p>什么时候写小论文初稿：<br>
+当实验差不多达到预期，还差一些小的缝缝补补时，就可以写初稿了。写初稿的目的在于梳理自己做过的工作，找出哪里还有空白，那么后续的工作就相当于做填空题了。<br>
+初稿和终稿会相差90%左右，不用过多焦虑。</p>
+</blockquote>
+<blockquote>
+<p>人机协同的关键在于：人和机器能够互相读懂。大模型的诞生使得机器能够读懂人的语言，而人如何理解机器的决策是人机协同一个非常重要的点。</p>
+</blockquote>
+<blockquote>
+<p>我们的创新出在哪里：一个方法应用到一个领域一定会有改进，主要讲自己的改进，就是创新。</p>
+</blockquote>
+<h1 id="人和事">人和事</h1>
+<blockquote>
+<p>当我们面临一个选择点时，如何选择？</p>
+<ul>
+<li>首先要明确的是，最后大家的人生都会到达一个大差不差的点，但到达这个点有两种方式</li>
+</ul>
+<ol>
+<li>选择较难的那条路，我们会一步一步向上努力，最终到达那个点</li>
+<li>选择较轻松的路，最后开始会很简单，但到后面也会遇到一个艰难的上陡坡，付出成倍的努力到达那个点</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>成功的背后都是大势所趋，我们也是时代的产物，现在的红利是解决实际问题，国家对论文的奖励已经越来越少。</p>
+</blockquote>
+<blockquote>
+<p>遇事多看底层逻辑</p>
+</blockquote>
+<blockquote>
+<p>要构建自己是人生的飞轮</p>
+<ul>
+<li>飞轮即，某一环节double了，整体就double了</li>
+<li>像amzon，产品价↓-&gt;买家↑-&gt;卖家↑-&gt;供应链↑-&gt;产品价↓。</li>
+<li>人生也是一样，构建自己的飞轮体系，才能过得不那么累。</li>
+</ul>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基础学习-时域与频域]]></title>
+        <id>https://gouzi61.github.io/post/ji-chu-xue-xi-shi-yu-yu-pin-yu/</id>
+        <link href="https://gouzi61.github.io/post/ji-chu-xue-xi-shi-yu-yu-pin-yu/">
+        </link>
+        <updated>2023-07-04T14:58:55.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="时域和频域的关系">时域和频域的关系</h1>
+<ul>
+<li>时域：时域是信号在时间轴随时间变化的总体概括</li>
+<li>
+<ul>
+<li>横轴：时间</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>纵轴：信号的变化</li>
+</ul>
+</li>
+<li>频域：描述频率变化和幅度变化的关系</li>
+<li>
+<ul>
+<li>横轴：频率</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>纵轴：该频率信号的幅度</li>
+</ul>
+</li>
+<li>时域变换到频域可以使用傅里叶变换来实现</li>
+</ul>
+<h1 id="傅里叶变换">傅里叶变换</h1>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1pW411J7s8/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9485c4461ffe781dfaaf5fead4dd80cc">B站动画讲解</a></li>
+</ul>
+<blockquote>
+<p>首先要明确，一个复杂信号是多个信号叠加而来的，方向相反就抵消，方向相同则增强，如下图所示</p>
+<ul>
+<li><img src="https://gouzi61.github.io/post-images/1688626854708.png" alt="图1  信号叠加" loading="lazy"></li>
+<li>那么核心问题就是：如何把这么一个复杂信号分解成几个简单信号呢？</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>我们现在的目的就是寻找一个数学公式，使他能够区别对待不同的频率</p>
+<ul>
+<li>想像信号的某一部分，我们将其放在一个圆上，如下图所示，任意时刻下，高处的离圆心更远<img src="https://gouzi61.github.io/post-images/1688628420713.png" alt="" loading="lazy"></li>
+<li>继续想像，现在的信号是每秒震荡三次，现在的图像是每过两秒，图像就绕圆一周<img src="https://gouzi61.github.io/post-images/1688628570630.png" alt="" loading="lazy"></li>
+<li>有趣的是，当缠绕半径和信号频率相等时，会出现一个特别的情况，<strong>所有高处的点，都落在圆右侧，所有低处的点，都落在圆左侧</strong><img src="https://gouzi61.github.io/post-images/1688628887928.png" alt="" loading="lazy"></li>
+<li>现在我们想象在圆上的这个图形是有质心的，在缠绕频率&lt;信号频率时，质心在原点附近，而缠绕频率=信号频率时，质心会突然远离原点，我们做一个图来刻画质心的位置变化<img src="https://gouzi61.github.io/post-images/1688629551606.png" alt="" loading="lazy"></li>
+<li>现在我们对2HZ+3HZ的叠加信号作图，会神奇地发现质心会在2和3时有波峰<img src="https://gouzi61.github.io/post-images/1688631155491.png" alt="" loading="lazy"></li>
+<li>到此为止我们貌似可以从一个复杂信号中分出多个简单信号了</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>现在我们开始探讨上述的“质心”代表的是什么</p>
+<ul>
+<li>我们用复数来刻画质心的位置，这里有一个重要性质：e^2πift可以在复平面画圆，我们直接拿来用。当f=1/10时，此向量就每10秒转一整圈。<img src="https://gouzi61.github.io/post-images/1688631709072.png" alt="" loading="lazy"></li>
+<li>我们现在再乘上一个信号，就可以在复平面刻画信号了<img src="https://gouzi61.github.io/post-images/1688632385523.png" alt="" loading="lazy"></li>
+<li>那么质心如何取呢？一个直观的思路是随机取几个信号点再取平均<img src="https://gouzi61.github.io/post-images/1688632461938.png" alt="" loading="lazy"></li>
+<li>进一步，我们自然而然就想到使用积分求质心<img src="https://gouzi61.github.io/post-images/1688632524305.png" alt="" loading="lazy"></li>
+<li>此时，真正的傅里叶变换就出来了，需要注意的是，傅里叶公式并没有取平均，而是对波峰不断积累，出现的越多，波峰也就越多。<img src="https://gouzi61.github.io/post-images/1688632639762.png" alt="" loading="lazy"></li>
+</ul>
+</blockquote>
+<h1 id="小波变换">小波变换</h1>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1LW411g783/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9485c4461ffe781dfaaf5fead4dd80cc">B站教程</a></li>
+<li>傅里叶变换（用于平稳时间序列）并不能保存信号的相位信息且不能有效代表信号间的突然变化，因此考虑使用小波变换（可用于非平稳时间序列）</li>
+<li>傅里叶变换是把信号拆解成不同频率的信号，而小波变换是把一个信号拆解为不同胖瘦的小波<img src="https://gouzi61.github.io/post-images/1688898163936.png" alt="" loading="lazy"></li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基础学习-多维矩阵乘积]]></title>
+        <id>https://gouzi61.github.io/post/ji-chu-xue-xi-duo-wei-ju-zhen-cheng-ji/</id>
+        <link href="https://gouzi61.github.io/post/ji-chu-xue-xi-duo-wei-ju-zhen-cheng-ji/">
+        </link>
+        <updated>2023-06-17T10:26:58.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="参考地址"><a href="https://blog.csdn.net/Rolandxxx/article/details/122889129">参考地址</a></h1>
+<h1 id="所有大于二维的矩阵都是以二维为基础堆叠在一起的">所有大于二维的矩阵，都是以二维为基础堆叠在一起的！！！</h1>
+<p>最后矩阵运算时都可以转为常见的二维矩阵运算，在多维矩阵相乘中，需要后两维shape匹配原则，因为最后两维才是有数据的矩阵。</p>
+<h1 id="计算实例">计算实例</h1>
+<p>a.shape = [2, 1, 4, 5]       b.shape = [2, 1, 4, 4,]      两矩阵相乘得到[2, 1, 4, 4]。前两维用了广播机制得到[2, 1]，后两维是矩阵乘法计算得到的[4, 4]</p>
+]]></content>
+    </entry>
+</feed>
